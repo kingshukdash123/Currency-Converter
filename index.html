@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- main container -->
+    <div class="main-container">
+        <p id="title">Currency Converter</p>
+        <form>
+
+            <!-- amount input -->
+            <div class="amount-input">
+                <p id="enter-amount-title">Enter Amount</p>
+                <input type="number" placeholder="Amount of conversion..." class="enter-amount-input hover-effect">
+            </div>
+
+            <!-- exchange container -->
+            <div class="exchange-container">
+
+                <!-- from container -->
+                <div class="from-container">
+                    <p class="select-text">From</p>
+                    <div class="select-from-container select hover-effect">
+                        <img src="https://flagsapi.com/US/flat/64.png">
+                        <select name="from" class="select-currency"></select>
+                    </div>
+                </div>
+
+                <!-- exchange icon -->
+                <i id="exchange-icon" class="fa-solid fa-arrow-right-arrow-left"></i>
+
+                <!-- to container -->
+                <div class="to-container">
+                    <p class="select-text">To</p>
+                    <div class="select-to-container select hover-effect">
+                        <img src="https://flagsapi.com/IN/flat/64.png">
+                        <select name="to" class="select-currency"></select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- final result -->
+            <div class="result">
+                <p id="result-msg"></p>
+            </div>
+
+            <!-- exchange button -->
+             <button id="exchange-button">Get Exchange Rate</button>
+        </form>
+    </div>
+    <script src="country.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

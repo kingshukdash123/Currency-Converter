@@ -1,0 +1,112 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+body {
+    height: 100vh;
+    background-color: #f0dfb1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container {
+    background-color: white;
+    padding: 2.5rem;
+    height: 50vh;
+    width: 30vw;
+    border-radius: 20px;
+}
+#title {
+    font-size: 1.8rem;
+    font-weight: 550;
+    text-align: center;
+    font-family: serif;
+}
+/* form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+} */
+.amount-input {
+    margin-top: 2rem;
+    width: 100%;
+}
+#enter-amount-title {
+    margin: 0rem 0rem 0.3rem 0.5rem;
+}
+.enter-amount-input {
+    width: 100%;
+    border: 1px solid lightgrey;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    height: 3rem;
+}
+.exchange-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.select-text {
+    margin: 0rem 0rem 0.3rem 0.5rem; 
+}
+.select img {
+    width: 2rem;
+}
+.select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgrey;
+    padding: 0.3rem;
+    border-radius: 10px;
+    gap: 1rem;
+}
+.select-currency {
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+}
+#exchange-icon {
+    position: relative;
+    top: 0.8rem;
+    font-size: 1.3rem;
+}
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+.result p {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 2.5rem;
+}
+#exchange-button {
+    width: 100%;
+    color: white;
+    background-color: rgb(9, 83, 66);
+    border: 1px solid lightgrey;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    font-weight: 549;
+}
+#exchange-button:hover {
+    background-color: #218838;
+    color: white;
+}
+.hover-effect:hover {
+    box-shadow: 0px 0px 10px rgba(25, 31, 52, 0.25);
+}
